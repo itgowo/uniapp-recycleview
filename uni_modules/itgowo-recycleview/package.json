@@ -10,7 +10,7 @@
     "大数据量",
     "列表"
 ],
-  "repository": "",
+  "repository": "https://github.com/itgowo/uniapp-recycleview",
   "engines": {
     "HBuilderX": "^3.1.0"
   },
