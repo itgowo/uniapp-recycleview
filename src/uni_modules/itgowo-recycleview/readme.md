@@ -3,8 +3,6 @@
 支持超大数据量渲染列表，DOM节点数可空，如示例只需要数十个节点即可服用节点信息，通过肉眼无法观察到的抖动位移和显示更新达到复用目的。
 ### 背景
 项目接口一次性返回大量数据，严重影响render时间，本人Android开发5年以上，前端和小程序开发2年，计划模仿Android上Recycleview机制，由于无法操作DOM（uniapp/小程序），故采用快速动画原理，不让人看出移动即可。
-
-已上传Github
 ### 前提条件和局限性
 再次声明，下面讲的部分内容具有开发Android习惯，命名、使用和思想
 支持两种模式，当数据量大于minNum时启用优化，否则常规for添加
@@ -96,4 +94,4 @@ Props
 |prepareViewNum|否|Number|5|预留view数量，是previousDataCount和nextDataCount的最大值|
 |itemViewHeight|是|Number|50|单位px，每条数据展示view的高度，不设置不行的，滑动区域高度=itemViewHeight*visibleViewNum|
 |minNum|否|Number|100|模式切换，数据量很小(小于等于minNum时)可以不用复用，某些极限操作会有未知bug|
-
+|extClass|否|String|''|指定class|

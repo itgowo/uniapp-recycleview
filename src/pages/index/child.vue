@@ -1,5 +1,5 @@
 <template>
-	<view style="height: 80upx;border: 3rpx solid #000000;box-sizing: border-box;">{{ item.value }}</view>
+	<view style="height: 100%;border: 3rpx solid #000000;box-sizing: border-box;">{{ item.value }}</view>
 </template>
 
 <script>
@@ -17,7 +17,6 @@ export default {
 		return {};
 	},
 	mounted() {
-		console.log('mounted', this);
 	}
 };
 </script>
