@@ -1,7 +1,7 @@
 {
   "id": "itgowo-recycleview",
   "displayName": "recycleview",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "支持加载大量数据的scrollview，当数据量很小时不做优化，当数据量很大时，自动优化，只需要创建一个屏幕item数+2个视图即可无限复用，10万条数据也只需要十几个view视图即可",
   "keywords": [
     "recycleview",
@@ -48,7 +48,7 @@
       "client": {
         "Vue": {
           "vue2": "y",
-          "vue3": "u"
+          "vue3": "y"
         },
         "App": {
           "app-vue": "u",

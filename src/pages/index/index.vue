@@ -1,8 +1,16 @@
 <template>
 	<view
 		style="display: flex;flex-direction: column;justify-content: space-between;padding: 100rpx;min-height: 200rpx;">
-		<button @click="go2R">打开RecycleViewList</button>
-		<button @click="go2D">打开默认实现页面</button>
+		<button @click="go2R(3000)">打开RecycleViewList 3000</button>
+		<button @click="go2R(10000)">打开RecycleViewList 10000</button>
+		<button @click="go2R(20000)">打开RecycleViewList 20000</button>
+		<button @click="go2R(50000)">打开RecycleViewList 50000</button>
+		<button @click="go2R(100000)">打开RecycleViewList 100000</button>
+		<button @click="go2D(3000)">打开默认实现页面 3000</button>
+		<button @click="go2D(10000)">打开默认实现页面 10000</button>
+		<button @click="go2D(20000)">打开默认实现页面 20000</button>
+		<button @click="go2D(50000)">打开默认实现页面 50000</button>
+		<button @click="go2D(100000)">打开默认实现页面 100000</button>
 	</view>
 </template>
 
@@ -22,14 +30,14 @@
 
 		},
 		methods: {
-			go2R() {
+			go2R(count) {
 				uni.navigateTo({
-					url: '/pages/index/recycle-page'
+					url: `/pages/index/recycle-page${count}`
 				})
 			},
-			go2D() {
+			go2D(count) {
 				uni.navigateTo({
-					url: '/pages/index/default-page'
+					url: `/pages/index/default-page${count}`
 				})
 			}
 		},
